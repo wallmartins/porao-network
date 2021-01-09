@@ -22,6 +22,7 @@ a {
 body {
   width: 100%;
   display: grid;
+  grid-template-columns: 1fr;
   background-color: #0F0E17;
   font-family: 'Source Sans Pro', sans-serif;
   color: #CBCBCB;
