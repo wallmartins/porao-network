@@ -40,11 +40,18 @@ body {
 /* HEADER START */
 
 .container {
-  width: 71.25rem;
+  width: 1140px;
   margin: 0 auto;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
 }
 
 .nav-bar {
@@ -93,6 +100,10 @@ body {
   padding-right: 40px;
 }
 
+.social-bar > li:last-child {
+  padding-right: 0;
+}
+
 /* HEADER END */
 
 /* HISTORY START */
@@ -101,6 +112,21 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+@media (max-width: 1280px) {
+  .history-info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .history-info > img {
+    width: 80%;
+  }
+
+  .history-info > img:first-child {
+    display: none;
+  }
 }
 
 .history-info > img:first-child {
@@ -138,6 +164,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-items: center;
 }
 
 .card-info {
@@ -150,8 +177,16 @@ body {
   align-items: center;
 }
 
+.card-info:last-child {
+  margin-right: 0;
+}
+
 .card-info-dif-size {
   height: 370px;
+}
+
+.card-info:nth-child(3) {
+  margin-right: 0;
 }
 
 .card-info > h3 {
@@ -171,6 +206,29 @@ body {
   margin-right: 10px;
   color: #F9CC2E;
   font-size: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+  .card-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .card-info {
+    width: 18rem;
+    margin: 0 52px 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .card-content {
+    grid-template-columns: 1fr;
+  }
+
+  .card-info {
+    margin: 0 0 48px 0;
+    width: 21.875rem;
+  }
 }
 
 /* WORKS END */
@@ -295,6 +353,24 @@ body {
   color: #12111c;
 }
 
+@media (max-width: 1280px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-text {
+    margin: 0 auto;
+  }
+
+  .contact-text > h3 {
+    display: none;
+  }
+
+  .form-contact {
+    margin: 0 auto;
+  }
+}
+
 /* CONTACT END */
 
 footer {
@@ -330,4 +406,8 @@ footer {
 .footer-social-bar > li{
   display: inline-block;
   padding-right: 3rem;
+}
+
+.footer-social-bar > li:last-child {
+  padding-right: 0;
 }
