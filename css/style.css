@@ -172,7 +172,7 @@ body {
 }
 
 .card-info {
-  /* width: 21.875rem; */
+  width: 21.875rem;
   margin-right: 3.25rem;
   padding: 20px 0;
   background-color: #12111c;
@@ -219,7 +219,7 @@ body {
   }
 
   .card-info {
-    /* width: 18rem; */
+    width: 18rem;
     margin: 0 52px 0 0;
   }
 }
@@ -231,7 +231,6 @@ body {
 
   .card-info {
     margin: 0 0 48px 0;
-    /* width: 21.875rem; */
   }
 }
 
@@ -263,7 +262,7 @@ body {
 
 .staff-info > hr {
   margin-top: 1rem;
-  /* width: 14rem; */
+  width: 14rem;
   border: 2px solid #F9CC2E;
 }
 
