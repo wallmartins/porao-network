@@ -78,6 +78,7 @@ body {
   border-bottom: 4px solid #F9CC2E;
   text-align: center;
   font-size: 3rem;
+  width: 100%;
 }
 
 .header-title > h1 > span {
@@ -109,6 +110,24 @@ body {
   .header-title {
     font-size: 2rem;
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    align-items: center;
+  }
+
+  .header-title {
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+
+  .social-bar > li{
+    display: inline-block;
+    padding-right: 40px;
   }
 }
 
