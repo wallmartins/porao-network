@@ -12,6 +12,7 @@
     cursor: pointer;
     position: absolute;
     top: 2rem;
+    left: 1rem;
   }
   
   .open:before {
@@ -38,6 +39,19 @@
     top: 4px;
     transform: rotate(0deg);
     transition: all 0.3s ease;
+  }
+
+  .close[for="menuToggle"] {
+    position: absolute;
+    left: 1rem;
+  }
+
+  .close-nav {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    color: #CBCBCB;
   }
   
   .menuOpen {
@@ -132,6 +146,7 @@
   
   #menuToggle:checked ~ .menuOpen .open {
     background-color: transparent;
+    display: none;
   }
   
   #menuToggle:checked ~ .menuOpen .open:before {
