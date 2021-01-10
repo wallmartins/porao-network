@@ -1,3 +1,5 @@
+@import './toggle-menu.css';
+
 body, h1, h2, ul, li, p, dd, dt, dl, span {
   margin: 0;
   padding: 0;
@@ -99,6 +101,10 @@ body {
   padding-right: 0;
 }
 
+.toggle-menu {
+  display: none;
+}
+
 @media (max-width: 1280px) {
   .container {
     max-width: 800px;
@@ -114,19 +120,23 @@ body {
 }
 
 @media (max-width: 640px) {
-  .header {
-    display: grid;
-    align-items: center;
-  }
-
   .header-title {
+    margin-top: 4rem;
     font-size: 1rem;
     padding: 10px 0;
   }
 
+  .toggle-menu {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
   .social-bar > li{
-    display: inline-block;
-    padding-right: 40px;
+    display: none;
+    margin: 0;
   }
 }
 

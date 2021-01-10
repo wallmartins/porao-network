@@ -1,0 +1,175 @@
+@media (max-width: 640px) {
+  input {
+    display: none;
+  }
+  
+  .open {
+    background-color: #F9CC2E;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 2rem;
+  }
+  
+  .open:before {
+    content: "";
+    background-color: #F9CC2E;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: -8px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .open:after {
+    content: "";
+    background-color: #F9CC2E;
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+  }
+  
+  .menuOpen {
+    width: 24px;
+    height: 20px;
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .menuOpen:hover .open:before {
+    top: -9px;
+  }
+  
+  .menuOpen:hover .open:after {
+    top: 5px;
+  }
+  
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(15, 14, 23, 0.9);
+  }
+  
+  .menu label {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-size: 100%;
+    cursor: pointer;
+  }
+  
+  .menu .menuContent {
+    position: relative;
+    top: 40%;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+  .menu ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    padding: 10px 0;
+  }
+  
+  .menu ul li a:hover {
+    color: #ff8702;
+  }
+  
+  .menu ul li:hover {
+    background: white;
+  }
+  
+  .menuEffects {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+  
+  .menuEffects ul {
+    transform: translateY(0%);
+    transition: all 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
+  }
+  
+  #menuToggle:checked ~ .menuEffects ul {
+    opacity: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open {
+    background-color: transparent;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:before {
+    content: "";
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:checked ~ .menuOpen .open:after {
+    content: "";
+    background-color: white;
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  #menuToggle:not(:checked) ~ .menuEffects ul {
+    transform: translateY(-30%);
+  }
+
+  .social-bar-toggle {
+    margin-top: 64px;
+    text-align: center;
+  }
+  
+  .social-bar-toggle > li{
+    display: inline-block;
+    padding-right: 40px;
+  }
+  
+  .social-bar-toggle > li:last-child {
+    padding-right: 0;
+  }
+  
+}
