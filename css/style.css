@@ -40,18 +40,12 @@ body {
 /* HEADER START */
 
 .container {
-  width: 1140px;
+  max-width: 1140px;
+  width: 100%;
   margin: 0 auto;
   align-items: center;
   display: flex;
   flex-direction: column;
-}
-
-@media (max-width: 1280px) {
-  .container {
-    width: 800px;
-    margin: 0 auto;
-  }
 }
 
 .nav-bar {
@@ -104,6 +98,20 @@ body {
   padding-right: 0;
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header-title {
+    font-size: 2rem;
+    padding: 10px 0;
+  }
+}
+
 /* HEADER END */
 
 /* HISTORY START */
@@ -118,10 +126,6 @@ body {
   .history-info {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .history-info > img {
-    width: 80%;
   }
 
   .history-info > img:first-child {
@@ -168,7 +172,7 @@ body {
 }
 
 .card-info {
-  width: 21.875rem;
+  /* width: 21.875rem; */
   margin-right: 3.25rem;
   padding: 20px 0;
   background-color: #12111c;
@@ -215,7 +219,7 @@ body {
   }
 
   .card-info {
-    width: 18rem;
+    /* width: 18rem; */
     margin: 0 52px 0 0;
   }
 }
@@ -227,7 +231,7 @@ body {
 
   .card-info {
     margin: 0 0 48px 0;
-    width: 21.875rem;
+    /* width: 21.875rem; */
   }
 }
 
@@ -259,7 +263,7 @@ body {
 
 .staff-info > hr {
   margin-top: 1rem;
-  width: 14rem;
+  /* width: 14rem; */
   border: 2px solid #F9CC2E;
 }
 
@@ -296,7 +300,7 @@ body {
 
 .form-contact {
   padding: 2.5rem 3rem;
-  width: 35.125rem;
+  /* width: 35.125rem; */
   background-color: #151420;
   left: 40rem;
   top: 1rem;
@@ -323,7 +327,7 @@ body {
 .form-contact > form > input {
   background: none;
   border: 2px solid #F9CC2E;
-  width: 28rem;
+  /* width: 28rem; */
   padding: 0.675rem;
   margin-bottom: 2rem;
 }
@@ -331,14 +335,14 @@ body {
 .form-contact > form > textarea {
   background: none;
   border: 2px solid #F9CC2E;
-  width: 28rem;
+  /* width: 28rem; */
   height: 10rem;
   padding: 0.675rem;
 }
 
 .form-contact > form > button {
   margin-top: 1rem;
-  width: 28rem;
+  /* width: 28rem; */
   padding: 0.675rem;
   background: none;
   border: 2px solid #F9CC2E;
@@ -395,7 +399,7 @@ footer {
 .brand > p {
   font-size: 0.8rem;
   text-align: justify;
-  width: 600px;
+  /* width: 600px; */
 }
 
 .footer-social-bar {
