@@ -181,7 +181,7 @@ body {
   #history {
     margin-top: 0;
   }
-  
+
   .history-info {
     display: grid;
     grid-template-columns: 1fr;
@@ -458,4 +458,10 @@ footer {
 
 .footer-social-bar > li:last-child {
   padding-right: 0;
+}
+
+@media (max-width: 640px) {
+  .footer-social-bar > li {
+    padding-right: 0.675rem;
+  }
 }
