@@ -429,6 +429,7 @@ footer {
 .footer-content {
   display: grid;
   grid-template-columns: 1fr;
+  width: 50%;
 }
 
 .footer-title {
@@ -458,6 +459,12 @@ footer {
 
 .footer-social-bar > li:last-child {
   padding-right: 0;
+}
+
+@media (max-width: 1280px) {
+  .footer-content {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {

@@ -4,8 +4,6 @@ export default function initToggleMenu() {
   const closeBtn = document.querySelector('.close');
   const menuLinks = document.querySelectorAll('.menu-content a[href^="#"]');
 
-  console.log(menuLinks);
-
   function openModal() {
     menuContent.classList.add('active');
   }
