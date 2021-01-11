@@ -61,11 +61,11 @@
     background-color: #0F0E17;
     z-index: 1000;
     left: 0;
-    padding: 4rem 2rem 0 2rem;
+    padding: 2rem 2rem 0 2rem;
   }
 
   .menu-content > ul {
-    margin: 4rem 0 8rem 0;
+    margin: 4rem 0 4rem 0;
   }
 
   .menu-content > ul > li {
@@ -87,7 +87,7 @@
   
   .social-bar-toggle > li{
     display: inline-block;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
   
   .social-bar-toggle > li:last-child {
