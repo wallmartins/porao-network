@@ -41,146 +41,53 @@
     transition: all 0.3s ease;
   }
 
-  .close[for="menuToggle"] {
+  .close {
+    font-size: 2rem;
+    color: #CBCBCB;
     position: absolute;
-    left: 1rem;
+    right: 3rem;
+    font-weight: 600;
   }
 
-  .close-nav {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: left;
-    color: #CBCBCB;
-  }
-  
-  .menuOpen {
-    width: 24px;
-    height: 20px;
-    display: block;
-    padding: 15px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  .menuOpen:hover .open:before {
-    top: -9px;
-  }
-  
-  .menuOpen:hover .open:after {
-    top: 5px;
-  }
-  
-  .menu {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(15, 14, 23, 0.9);
-  }
-  
-  .menu label {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    background-size: 100%;
-    cursor: pointer;
-  }
-  
-  .menu .menuContent {
-    position: relative;
-    top: 40%;
-    font-size: 54px;
-    text-align: center;
-    padding-bottom: 20px;
-    margin-top: -170px;
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-  }
-  
-  .menu ul li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    transition: color 0.2s;
-    font-family: Trebuchet MS;
-    text-transform: uppercase;
-    padding: 10px 0;
-  }
-  
-  .menu ul li a:hover {
-    color: #ff8702;
-  }
-  
-  .menu ul li:hover {
-    background: white;
-  }
-  
-  .menuEffects {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0.5s;
-  }
-  
-  .menuEffects ul {
-    transform: translateY(0%);
-    transition: all 0.5s;
-  }
-  
-  #menuToggle:checked ~ .menuEffects {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s;
-  }
-  
-  #menuToggle:checked ~ .menuEffects ul {
-    opacity: 1;
-  }
-  
-  #menuToggle:checked ~ .menuOpen .open {
-    background-color: transparent;
+  .menu-content {
     display: none;
   }
-  
-  #menuToggle:checked ~ .menuOpen .open:before {
-    content: "";
-    background-color: white;
-    transform: rotate(45deg);
+
+  .active {
+    display: block;
     position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #0F0E17;
+    z-index: 1000;
+    left: 0;
+    padding: 4rem 2rem 0 2rem;
   }
-  
-  #menuToggle:checked ~ .menuOpen .open:after {
-    content: "";
-    background-color: white;
-    transform: rotate(-45deg);
-    position: relative;
-    top: 0;
-    right: 0;
-    z-index: 1;
+
+  .menu-content > ul {
+    margin: 4rem 0 8rem 0;
   }
-  
-  #menuToggle:not(:checked) ~ .menuEffects ul {
-    transform: translateY(-30%);
+
+  .menu-content > ul > li {
+    padding: 1rem;
+  }
+
+  .menu-content > ul > li > a{
+    font-size: 1.5rem;
+    color: #CBCBCB;
+  }
+
+  .menu-content > ul > li > a:hover{
+    color: #F9CC2E;
   }
 
   .social-bar-toggle {
-    margin-top: 64px;
     text-align: center;
   }
   
   .social-bar-toggle > li{
     display: inline-block;
-    padding-right: 40px;
+    margin-right: 2rem;
   }
   
   .social-bar-toggle > li:last-child {

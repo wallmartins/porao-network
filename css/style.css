@@ -178,6 +178,10 @@ body {
 }
 
 @media (max-width: 1280px) {
+  #history {
+    margin-top: 0;
+  }
+  
   .history-info {
     display: grid;
     grid-template-columns: 1fr;
