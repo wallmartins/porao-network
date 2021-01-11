@@ -87,7 +87,7 @@
   
   .social-bar-toggle > li{
     display: inline-block;
-    margin-right: 1.5rem;
+    margin-right: 0.675rem;
   }
   
   .social-bar-toggle > li:last-child {
