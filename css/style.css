@@ -34,6 +34,7 @@ body {
   font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
+  color: #ffffff;
   margin: 4rem 0;
   border-bottom: 4px solid #F9CC2E;
   padding-bottom: 0.625rem;
@@ -81,6 +82,7 @@ body {
   text-align: center;
   font-size: 3rem;
   width: 100%;
+  color: #ffffff;
 }
 
 .header-title > h1 > span {
@@ -169,10 +171,11 @@ body {
   margin-bottom: 1.5rem;
   border-bottom: 4px solid #F9CC2E;
   padding-bottom: 0.625rem;
+  color: #ffffff;
 }
 
 .history-text > p {
-   text-align: justify;
+   text-align: left;
    font-size: 1.25rem;
    line-height: 1.875rem;
 }
@@ -238,6 +241,7 @@ body {
   margin-bottom: 1.5rem;
   border-bottom: 4px solid #F9CC2E;
   padding-bottom: 0.625rem;
+  color: #ffffff;
 }
 
 .card-info > ul > li {
@@ -329,11 +333,12 @@ body {
 .contact-text > h3 {
   font-size: 2.25rem;
   margin: 1rem 0;
+  color: #ffffff;
 }
 
 .contact-text > p {
   font-size: 1.125rem;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 4rem;
 }
 
